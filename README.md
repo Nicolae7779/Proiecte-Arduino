@@ -68,37 +68,39 @@ Asamblarea Arduino:
      - Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB interior se va aprinde
      - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB interior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald.
 
-## Laboratory 4
-Components:
+## Laboratorul 4
+Componente:
+
 - Arduino Uno
-- 2 Leds
+- 2 Leduri
 - 1 LCD
-- 1 Servo motor
-- 1 Speaker
-- 3 Buttons
+- 1 Motor servo
+- 1 Difuzor
+- 3 Buton
 
-Requirement
+Cerință
 
-When power is applied to the system the red LED will light up.
+Când se aplică energie sistemului, LED-ul roșu se va aprinde.
 
-When the first button is pressed the system will do the following:
-- The green LED will light up
-- A startup message will be displayed on the LCD
-- When the second button is pressed, the servo motor will move to the left, and the speaker will play a certain song
-- When the third button is pressed, the servomotor will move to the right, and the speaker will play another song
+Când primul buton este apăsat, sistemul va face următoarele:
 
-A Word document will be created with the following information:
-- The first page will contain the name of the student
-- The second and third pages will contain:
-  - Exercise requirements
-  - A figure made with the Arduino simulator
-  - The source code, there will also be comments in the code
-  - The link to the system on Tinkercad
+- LED-ul verde se va aprinde
+- Un mesaj de pornire va fi afișat pe LCD
+- Când al doilea buton este apăsat, motorul servo se va mișca spre stânga, și difuzorul va reda un anumit cântec
+- Când al treilea buton este apăsat, motorul servo se va mișca spre dreapta, și difuzorul va reda alt cântec
+S
+e va crea un document Word cu următoarele informații:
 
+- Prima pagină va conține numele studentului
+- A doua și a treia pagină vor conține:
+  - Cerințele exercițiului
+  - O figură realizată cu simulatorul Arduino
+  - Codul sursă, vor exista și comentarii în cod
+  - Linkul către sistemul pe Tinkercad
 ---
-***Solution:***
+***Soluția:***
 
-The architecture of the created system:
+Arhitectura sistemului creat:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Proiect%20Arduino.jpg)
 
