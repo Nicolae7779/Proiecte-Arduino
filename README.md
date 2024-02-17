@@ -1,44 +1,44 @@
-# ES (Embedded Systems)
-Embedded systems are computer systems specialized for specific tasks, integrated in the devices around us. Arduino is an open-source development platform commonly used for rapid prototyping in this field. In the presented labs, you explore Arduino and learn to interact with hardware components and program microcontrollers for various practical applications.
+# ES (Sisteme Încorporate)
+Sistemele încorporate sunt sisteme de calcul specializate pentru sarcini specifice, integrate în dispozitivele din jurul nostru. Arduino este o platformă de dezvoltare open-source, folosită frecvent pentru prototipare rapidă în acest domeniu. În laboratoarele prezentate, veți explora Arduino și veți învăța să interacționați cu componente hardware și să programați microcontrolere pentru diverse aplicații practice.
 
-## Laboratory 1
-After going through the examples in this lab, create the following assembly and using the Arduino IDE programming environment write the source code. For functionality testing the source code will be uploaded to the Arduino UNO.
+## Laboratorul 1
+După parcurgerea exemplelor din acest laborator, creați următoarea asamblare și folosind mediul de programare Arduino IDE scrieți codul sursă. Pentru testarea funcționalității codul sursă va fi încărcat pe Arduino UNO.
 
-Components:
+Componente:
 - Arduino UNO
-- 2 Temperature sensors
-- Button
+- 2 Senzori de temperatură
+- Buton
 - 1 LED
-- Connecting wires
+- Fire de conectare
 - 1 LCD
+- 
+Dacă utilizatorul apasă butonul o dată, LED-ul se va aprinde, iar dacă apasă de două ori, valoarea citită de la senzori va fi afișată pe Monitorul Serial.
 
-If the user presses the button once, the LED will light up, and if he presses it twice, the value read from the sensors will be displayed on the Serial Monitor.
+## Laboratorul 2
+Folosind exemplele prezentate în acest laborator, se va crea următoarea asamblare și folosind Arduino IDE codul sursă va fi scris și încărcat pe Arduino din simulator pentru a verifica funcționalitatea.
 
-## Laboratory 2
-Using the examples presented in this lab, the following assembly will be created and using the Arduino IDE the source code will be written and uploaded to the Arduino from the simulator to verify functionality.
+Componente:
 
-Components:
-- Arduino UNO
-- Temperature sensor
-- Button
-- 3 LEDs
-- Connecting wires
+Arduino UNO
+Senzor de temperatură
+Buton
+3 LED-uri
+Fire de conectare
+Când placa de dezvoltare este alimentată, LED-ul roșu se va aprinde, iar când utilizatorul apasă butonul următoarele acțiuni se vor întâmpla:
 
-When the development board is powered, the red LED will light up, and when the user presses the button the following actions will happen:
-- The green LED turns on and the red LED turns off
-- The system will measure the temperature
-- 4 scenarios will be defined for temperature intervals, for each interval the yellow/blue LED will have a different intensity.
-- Temperature will be displayed on Serial Monitor
+LED-ul verde se aprinde și LED-ul roșu se stinge
+Sistemul va măsura temperatura
+Se vor defini 4 scenarii pentru intervale de temperatură, pentru fiecare interval LED-ul galben/albastru va avea o intensitate diferită.
+Temperatura va fi afișată pe Monitorul Serial
+Dacă utilizatorul apasă de două ori, sistemul se va opri, LED-ul roșu se va aprinde și LED-ul verde se va stinge.
 
-If the user presses twice, the system will shut down, the red LED will turn on, and the green LED will turn off.
+Se va crea un document Word cu următoarele informații:
 
-A Word document will be created with the following information:
-- The first page will contain the name of the student
-- The second and third pages will contain:
-  - Exercise requirements
-  - A figure made with the Arduino simulator
-  - The source code, there will also be comments in the code
-
+Prima pagină va conține numele studentului
+A doua și a treia pagină vor conține:
+Cerințele exercițiului
+O figură realizată cu simulatorul Arduino
+Codul sursă, vor exista și comentarii în cod
 ---
 ***Solution:***
 
