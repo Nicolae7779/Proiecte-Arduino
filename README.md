@@ -70,31 +70,34 @@ Asamblarea Arduino:
      - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB interior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald.
 
 ## Laboratory 4
-Components:
+Componente:
+
 - Arduino Uno
-- 2 Leds
+- 2 Leduri
 - 1 LCD
-- 1 Servo motor
-- 1 Speaker
-- 3 Buttons
+- 1 Motor servo
+- 1 Difuzor
+- 3 Buton
 
-Requirement
+Cerință
 
-When power is applied to the system the red LED will light up.
+Când se aplică energie sistemului, LED-ul roșu se va aprinde.
 
-When the first button is pressed the system will do the following:
-- The green LED will light up
-- A startup message will be displayed on the LCD
-- When the second button is pressed, the servo motor will move to the left, and the speaker will play a certain song
-- When the third button is pressed, the servomotor will move to the right, and the speaker will play another song
+Când primul buton este apăsat, sistemul va face următoarele:
 
-A Word document will be created with the following information:
-- The first page will contain the name of the student
-- The second and third pages will contain:
-  - Exercise requirements
-  - A figure made with the Arduino simulator
-  - The source code, there will also be comments in the code
-  - The link to the system on Tinkercad
+- LED-ul verde se va aprinde
+- Un mesaj de pornire va fi afișat pe LCD
+- Când al doilea buton este apăsat, motorul servo se va mișca spre stânga, și difuzorul va reda un anumit cântec
+- Când al treilea buton este apăsat, motorul servo se va mișca spre dreapta, și difuzorul va reda alt cântec
+  
+Se va crea un document Word cu următoarele informații:
+
+- Prima pagină va conține numele studentului
+- A doua și a treia pagină vor conține:
+  - Cerințele exercițiului
+  - O figură realizată cu simulatorul Arduino
+  - Codul sursă, vor exista și comentarii în cod
+  - Linkul către sistemul pe Tinkercad
 
 ---
 ***Soluția:***
@@ -103,7 +106,7 @@ Arhitectura sistemului creat:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Proiect%20Arduino.jpg)
 
-System architecture created in Tinkercad:
+Arhitectura sistemului creat în Thinkercad:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Arhitectura%20sistemului%20-%20Tinkercad.png)
 
@@ -130,60 +133,57 @@ Diagrama de timp a semafoarelor este prezentată în tabelul următor:
 ## Laboratorul 6
 Componente:
 
-Arduino Uno
-2 LED-uri RGB sau 4 LED-uri de culori diferite (pentru exterior și interior)
-2 Senzori de temperatură
-1 Buton
-1 LED Roșu
+- Arduino Uno
+- 2 LED-uri RGB sau 4 LED-uri de culori diferite (pentru exterior și interior)
+- 2 Senzori de temperatură
+- 1 Buton
+- 1 LED Roșu
+
 Cerință
 
 Asamblare Arduino:
 
-Când sistemul este alimentat de la portul USB și utilizatorul va apăsa butonul (se va folosi întreruperea), sistemul va porni și următoarele acțiuni vor fi efectuate:
-Se va măsura temperatura din exteriorul serei și se va compara cu valorile normale:
-Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB exterior se va aprinde
-Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB exterior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald
-Se va măsura temperatura din interiorul serei și se va compara cu valorile normale:
-Dacă valorile citite sunt normale atunci culoarea roșie a LED-ului RGB interior se va aprinde
-Dacă citirile nu sunt normale atunci LED-ul RGB interior va deveni albastru dacă este prea frig sau roșu dacă este prea cald și difuzorul va avea un sunet diferit pentru cele două situații
-Când sistemul este pornit va fi afișat în Monitorul Serial:
-Temperatura și umiditatea din exterior: valoare
-Temperatura și umiditatea din interior: valoare
-Când sistemul este oprit, va fi afișat în Monitorul Serial: OFF
-Când butonul este apăsat a doua oară, sistemul de monitorizare se va opri și LED-ul roșu se va aprinde, iar în Monitorul Serial va fi afișat OFF.
+- Când sistemul este alimentat de la portul USB și utilizatorul va apăsa butonul (se va folosi întreruperea), sistemul va porni și următoarele acțiuni vor fi efectuate:
+  - Se va măsura temperatura din exteriorul serei și se va compara cu valorile normale:
+    - Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB exterior se va aprinde
+    - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB exterior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald
+  - Se va măsura temperatura din interiorul serei și se va compara cu valorile normale:
+    - Dacă valorile citite sunt normale atunci culoarea roșie a LED-ului RGB interior se va aprinde
+    - Dacă citirile nu sunt normale atunci LED-ul RGB interior va deveni albastru dacă este prea frig sau roșu dacă este prea cald și difuzorul va avea un sunet diferit pentru cele două situații
+  - Când sistemul este pornit va fi afișat în Monitorul Serial:
+    - Temperatura și umiditatea din exterior: valoare
+    - Temperatura și umiditatea din interior: valoare
+    - Când sistemul este oprit, va fi afișat în Monitorul Serial: OFF
+    - Când butonul este apăsat a doua oară, sistemul de monitorizare se va opri și LED-ul roșu se va aprinde, iar în Monitorul Serial va fi afișat OFF.
+    - 
 Raport
 
-Membrii echipei:
 
-Declarația temei și utilitatea în lumea reală
+1) Declarația temei și utilitatea în lumea reală
 
-Componentele asamblării
+2) Componentele asamblării
 
-Diagrama logică și diagrama de clasă
+3) Diagrama logică și diagrama de clasă
 
-Codul sursă în limbajul C++
+4) Codul sursă în limbajul C++
 
-codul va trebui să conțină comentarii
-Fotografii în timpul laboratorului
+- codul va trebui să conțină comentarii
+1) Fotografii în timpul laboratorului
 
-Interfața aplicației C# și explicații
+2) Interfața aplicației C# și explicații
 
-Capturi de ecran ale tabelor din baza de date
+3) Capturi de ecran ale tabelor din baza de date
 
-Grafice/rapoarte
+4) Grafice/rapoarte
 
-Planul de testare
+5) Planul de testare
 
-Concluzii
+6) Concluzii
 
-Arhivarea Codurilor Sursă Arduino și a Aplicației C#
+7) Arhivarea Codurilor Sursă Arduino și a Aplicației C#
 
 ---
 ***Soluția:***
-
-Arhitectura sistemului creat:
-
-***Solution:***
 
 Schema logică și diagrama de clasă:
 
