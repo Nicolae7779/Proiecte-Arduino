@@ -48,23 +48,25 @@ Arhitectura sistemului creat:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%202/Arhitectura%20Arduino.png)
 
-## Laboratory 3
-Components:
+## Laboratorul 3
+Componente:
+
 - Arduino Uno
-- 2 RGB LEDs or 4 LEDs of different colors (for exterior and interior)
-- 2 Temperature sensors
-- 1 Button
+- 2 LED-uri RGB sau 4 LED-uri de culori diferite (pentru exterior și interior)
+- 2 Senzori de temperatură
+- 1 Buton
 
-Requirement
+Cerință
 
-Arduino assembly:
-- When the system is powered from the USB port and the user will press the button (interrupt will be used), the system will start and the following actions will be performed:
-  - Will measure the temperature outside the greenhouse and compare it with the normal values:
-    - If the readings are normal then the green color of the outdoor RGB LED will light up
-    - If the readings are not normal then the blue color of the outdoor RGB LED will light up if it is too cold or the red color if it is too hot
-  - Will measure the temperature inside the greenhouse and compare with normal values:
-    - If the readings are normal then the green color of the indoor RGB LED will light up
-    - If the readings are not normal then the blue color of the indoor RGB LED will light up if it is too cold or the red color if it is too hot.
+Asamblarea Arduino:
+
+- Când sistemul este alimentat de la portul USB și utilizatorul va apăsa butonul (se va folosi întreruperea), sistemul va porni și următoarele acțiuni vor fi efectuate:
+  - Se va măsura temperatura din exteriorul serei și se va compara cu valorile normale:
+     - Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB exterior se va aprinde
+     - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB exterior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald
+  - Se va măsura temperatura din interiorul serei și se va compara cu valorile normale:
+     - Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB interior se va aprinde
+     - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB interior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald.
 
 ## Laboratory 4
 Components:
