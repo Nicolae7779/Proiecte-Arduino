@@ -11,7 +11,7 @@ Componente:
 - 1 LED
 - Fire de conectare
 - 1 LCD
-- 
+  
 Dacă utilizatorul apasă butonul o dată, LED-ul se va aprinde, iar dacă apasă de două ori, valoarea citită de la senzori va fi afișată pe Monitorul Serial.
 
 ## Laboratorul 2
@@ -19,30 +19,32 @@ Folosind exemplele prezentate în acest laborator, se va crea următoarea asambl
 
 Componente:
 
-Arduino UNO
-Senzor de temperatură
-Buton
-3 LED-uri
-Fire de conectare
-Când placa de dezvoltare este alimentată, LED-ul roșu se va aprinde, iar când utilizatorul apasă butonul următoarele acțiuni se vor întâmpla:
+- Arduino UNO
+- Senzor de temperatură
+- Buton
+- 3 LED-uri
+- Fire de conectare
 
-LED-ul verde se aprinde și LED-ul roșu se stinge
-Sistemul va măsura temperatura
-Se vor defini 4 scenarii pentru intervale de temperatură, pentru fiecare interval LED-ul galben/albastru va avea o intensitate diferită.
-Temperatura va fi afișată pe Monitorul Serial
-Dacă utilizatorul apasă de două ori, sistemul se va opri, LED-ul roșu se va aprinde și LED-ul verde se va stinge.
+  Când placa de dezvoltare este alimentată, LED-ul roșu se va aprinde, iar când utilizatorul apasă butonul următoarele acțiuni se vor întâmpla:
+
+- LED-ul verde se aprinde și LED-ul roșu se stinge
+- Sistemul va măsura temperatura
+- Se vor defini 4 scenarii pentru intervale de temperatură, pentru fiecare interval LED-ul galben/albastru va avea o intensitate diferită.
+- Temperatura va fi afișată pe Monitorul Serial
+
+  Dacă utilizatorul apasă de două ori, sistemul se va opri, LED-ul roșu se va aprinde și LED-ul verde se va stinge.
 
 Se va crea un document Word cu următoarele informații:
 
-Prima pagină va conține numele studentului
-A doua și a treia pagină vor conține:
-Cerințele exercițiului
-O figură realizată cu simulatorul Arduino
-Codul sursă, vor exista și comentarii în cod
+- Prima pagină va conține numele studentului
+- A doua și a treia pagină vor conține:
+  - Cerințele exercițiului
+  - O figură realizată cu simulatorul Arduino
+  - Codul sursă, vor exista și comentarii în cod
 ---
-***Solution:***
+***Soluția:***
 
-The architecture of the created system:
+Arhitectura sistemului creat:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%202/Arhitectura%20Arduino.png)
 
