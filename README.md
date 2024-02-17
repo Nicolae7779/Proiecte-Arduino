@@ -1,4 +1,4 @@
-# ES (Sisteme Încorporate)
+# SÎ (Sisteme Încorporate)
 Sistemele încorporate sunt sisteme de calcul specializate pentru sarcini specifice, integrate în dispozitivele din jurul nostru. Arduino este o platformă de dezvoltare open-source, folosită frecvent pentru prototipare rapidă în acest domeniu. În laboratoarele prezentate, veți explora Arduino și veți învăța să interacționați cu componente hardware și să programați microcontrolere pentru diverse aplicații practice.
 
 ## Laboratorul 1
@@ -41,6 +41,7 @@ Se va crea un document Word cu următoarele informații:
   - Cerințele exercițiului
   - O figură realizată cu simulatorul Arduino
   - Codul sursă, vor exista și comentarii în cod
+  - 
 ---
 ***Soluția:***
 
@@ -68,35 +69,33 @@ Asamblarea Arduino:
      - Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB interior se va aprinde
      - Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB interior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald.
 
-## Laboratorul 4
-Componente:
-
+## Laboratory 4
+Components:
 - Arduino Uno
-- 2 Leduri
+- 2 Leds
 - 1 LCD
-- 1 Motor servo
-- 1 Difuzor
-- 3 Buton
+- 1 Servo motor
+- 1 Speaker
+- 3 Buttons
 
-Cerință
+Requirement
 
-Când se aplică energie sistemului, LED-ul roșu se va aprinde.
+When power is applied to the system the red LED will light up.
 
-Când primul buton este apăsat, sistemul va face următoarele:
+When the first button is pressed the system will do the following:
+- The green LED will light up
+- A startup message will be displayed on the LCD
+- When the second button is pressed, the servo motor will move to the left, and the speaker will play a certain song
+- When the third button is pressed, the servomotor will move to the right, and the speaker will play another song
 
-- LED-ul verde se va aprinde
-- Un mesaj de pornire va fi afișat pe LCD
-- Când al doilea buton este apăsat, motorul servo se va mișca spre stânga, și difuzorul va reda un anumit cântec
-- Când al treilea buton este apăsat, motorul servo se va mișca spre dreapta, și difuzorul va reda alt cântec
-S
-e va crea un document Word cu următoarele informații:
+A Word document will be created with the following information:
+- The first page will contain the name of the student
+- The second and third pages will contain:
+  - Exercise requirements
+  - A figure made with the Arduino simulator
+  - The source code, there will also be comments in the code
+  - The link to the system on Tinkercad
 
-- Prima pagină va conține numele studentului
-- A doua și a treia pagină vor conține:
-  - Cerințele exercițiului
-  - O figură realizată cu simulatorul Arduino
-  - Codul sursă, vor exista și comentarii în cod
-  - Linkul către sistemul pe Tinkercad
 ---
 ***Soluția:***
 
@@ -108,94 +107,100 @@ System architecture created in Tinkercad:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Arhitectura%20sistemului%20-%20Tinkercad.png)
 
-## Laboratory 5
-- To implement a traffic light for pedestrians, semaphorePietoni, using the already defined Traffic Light class. The traffic lights will synchronize so that when pedestrians are green, vehicles are red (pay attention to time lags).
-- To implement a pedestrian traffic light speaker for blind people. It will emit a sound when the traffic light is red and another sound when the pedestrian traffic light is green.
-- To implement a button for the pedestrian traffic lights. Once the button is pressed, the traffic light for cars will turn red, and the traffic light for pedestrians will turn green.
+## Laboratorul 5
+- Să se implementeze un semafor pentru pietoni, semaphorePietoni, folosind clasa Traffic Light deja definită. Semafoarele se vor sincroniza astfel încât când pentru pietoni este verde, pentru vehicule este roșu (atenție la decalajele de timp).
+- Să se implementeze un difuzor pentru semaforul pietonal destinat persoanelor nevăzătoare. Acesta va emite un sunet când semaforul este roșu și alt sunet când semaforul pietonal este verde.
+- Să se implementeze un buton pentru semaforul pietonal. Odată ce butonul este apăsat, semaforul pentru mașini va deveni roșu, iar semaforul pentru pietoni va deveni verde.
+  
+Pentru vehicule, timpul va fi:
 
-For vehicles the times will be:
-- 4 Red seconds;
-- 6 Seconds green;
-- 2 Seconds yellow;
+- 4 Secunde roșu;
+- 6 Secunde verde;
+- 2 Secunde galben;
 
-For pedestrians the times will be:
-• 3 Seconds green;
-• 9 Seconds red;
+Pentru pietoni, timpul va fi:
 
-The timing diagram of the traffic lights are presented in the following table:
+- 3 Secunde verde;
+- 9 Secunde roșu;
+  
+Diagrama de timp a semafoarelor este prezentată în tabelul următor:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%205/Diagrama%20timpi.png)
 
-## Laboratory 6
-Components:
-- Arduino Uno
-- 2 RGB LEDs or 4 LEDs of different colors (for exterior and interior)
-- 2 Temperature sensors
-- 1 Button
-- 1 Red LED
+## Laboratorul 6
+Componente:
 
-Requirement
+Arduino Uno
+2 LED-uri RGB sau 4 LED-uri de culori diferite (pentru exterior și interior)
+2 Senzori de temperatură
+1 Buton
+1 LED Roșu
+Cerință
 
-Arduino Assembly:
-- When the system is powered from the USB port and the user will press the button (interrupt will be used), the system will start and the following actions will be performed:
-  - Will measure the temperature outside the greenhouse and compare it with the normal values:
-    - If the readings are normal then the green color of the outdoor RGB LED will light up
-    - If the readings are not normal then the blue color of the outdoor RGB LED will light up if it is too cold or the red color if it is too hot
-  - Will measure the temperature inside the greenhouse and compare with normal values:
-    - If the read values are normal then the red color of the indoor RGB LED will light up
-    - If the readings are not normal then the indoor RGB LED will turn blue if it is too cold or red if it is too hot and the speaker will have a different sound for the two situations
-  - When the system is started it will be displayed in Serial Monitor:
-    - Outside temperature and humidity: value
-    - Indoor temperature and humidity: value
-  - When the system is turned off, it will be displayed in Serial Monitor: OFF
-  - When the button is pressed a second time, the monitoring system will stop and the red LED will light up, and OFF will be displayed in the Serial Monitor.
+Asamblare Arduino:
 
-Report
+Când sistemul este alimentat de la portul USB și utilizatorul va apăsa butonul (se va folosi întreruperea), sistemul va porni și următoarele acțiuni vor fi efectuate:
+Se va măsura temperatura din exteriorul serei și se va compara cu valorile normale:
+Dacă citirile sunt normale atunci culoarea verde a LED-ului RGB exterior se va aprinde
+Dacă citirile nu sunt normale atunci culoarea albastră a LED-ului RGB exterior se va aprinde dacă este prea frig sau culoarea roșie dacă este prea cald
+Se va măsura temperatura din interiorul serei și se va compara cu valorile normale:
+Dacă valorile citite sunt normale atunci culoarea roșie a LED-ului RGB interior se va aprinde
+Dacă citirile nu sunt normale atunci LED-ul RGB interior va deveni albastru dacă este prea frig sau roșu dacă este prea cald și difuzorul va avea un sunet diferit pentru cele două situații
+Când sistemul este pornit va fi afișat în Monitorul Serial:
+Temperatura și umiditatea din exterior: valoare
+Temperatura și umiditatea din interior: valoare
+Când sistemul este oprit, va fi afișat în Monitorul Serial: OFF
+Când butonul este apăsat a doua oară, sistemul de monitorizare se va opri și LED-ul roșu se va aprinde, iar în Monitorul Serial va fi afișat OFF.
+Raport
 
-Team members:
+Membrii echipei:
 
-1. Theme statement and real-world utility
+Declarația temei și utilitatea în lumea reală
 
-2. Assembly components
+Componentele asamblării
 
-3. Logical diagram and class diagram
+Diagrama logică și diagrama de clasă
 
-4. Source code in C++ language
-- the code will have to contain comments
+Codul sursă în limbajul C++
 
-5. Photos during the laboratory
+codul va trebui să conțină comentarii
+Fotografii în timpul laboratorului
 
-6. C# application interface and explanations
+Interfața aplicației C# și explicații
 
-7. Screenshots of the database tables
+Capturi de ecran ale tabelor din baza de date
 
-8. Graphs/reports
+Grafice/rapoarte
 
-9. Test plan
+Planul de testare
 
-10. Conclusions
+Concluzii
 
-11. Archived Arduino Source Codes and C# Application
+Arhivarea Codurilor Sursă Arduino și a Aplicației C#
 
 ---
+***Soluția:***
+
+Arhitectura sistemului creat:
+
 ***Solution:***
 
-Logical scheme and class diagram:
+Schema logică și diagrama de clasă:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Schema%20logica%20si%20diagrama%20de%20clase.png)
 
-System architecture:
+Arhitectura sistemului:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Arhitectura%20sistemului.png)
 
-C# application interface:
+Interfața aplicației C#:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Interfata%20din%20aplicatia%20C%23.png)
 
-The tables in the database:
+Tabelele din baza de date:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Tabelele%20din%20baza%20de%20date.png)
 
-Graphs/reports:
+Grafice/rapoarte:
 
 ![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Grafice%20si%20rapoarte.png)
