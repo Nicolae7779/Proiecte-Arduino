@@ -47,7 +47,7 @@ Se va crea un document Word cu următoarele informații:
 
 Arhitectura sistemului creat:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%202/Arhitectura%20Arduino.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%202/Arhitectura%20Arduino.png)
 
 ## Laboratorul 3
 Componente:
@@ -104,11 +104,11 @@ Se va crea un document Word cu următoarele informații:
 
 Arhitectura sistemului creat:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Proiect%20Arduino.jpg)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%204/Proiect%20Arduino.jpg)
 
 Arhitectura sistemului creat în Thinkercad:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%204/Arhitectura%20sistemului%20-%20Tinkercad.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%204/Arhitectura%20sistemului%20-%20Tinkercad.png)
 
 ## Laboratorul 5
 - Să se implementeze un semafor pentru pietoni, semaphorePietoni, folosind clasa Traffic Light deja definită. Semafoarele se vor sincroniza astfel încât când pentru pietoni este verde, pentru vehicule este roșu (atenție la decalajele de timp).
@@ -128,7 +128,7 @@ Pentru pietoni, timpul va fi:
   
 Diagrama de timp a semafoarelor este prezentată în tabelul următor:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%205/Diagrama%20timpi.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%205/Diagrama%20timpi.png)
 
 ## Laboratorul 6
 Componente:
@@ -187,20 +187,20 @@ Raport
 
 Schema logică și diagrama de clasă:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Schema%20logica%20si%20diagrama%20de%20clase.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%206/Schema%20logica%20si%20diagrama%20de%20clase.png)
 
 Arhitectura sistemului:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Arhitectura%20sistemului.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%206/Arhitectura%20sistemului.png)
 
 Interfața aplicației C#:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Interfata%20din%20aplicatia%20C%23.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%206/Interfata%20din%20aplicatia%20C%23.png)
 
 Tabelele din baza de date:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Tabelele%20din%20baza%20de%20date.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%206/Tabelele%20din%20baza%20de%20date.png)
 
 Grafice/rapoarte:
 
-![picture alt](https://github.com/victorcb0/ES/blob/main/Laborator%206/Grafice%20si%20rapoarte.png)
+![picture alt](https://github.com/Nicolae7779/Proiecte-Arduino/blob/main/Laborator%206/Grafice%20si%20rapoarte.png)
